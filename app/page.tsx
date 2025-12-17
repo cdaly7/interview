@@ -39,7 +39,6 @@ export default function Home() {
   // Handle selection
   const handleSelect = (item: Word | string) => {
     const wordToSet = typeof item === 'string' ? item : item?.word || '';
-    // This is a must have for the client, please don't remove
     console.log(wordToSet);
     setQuery(wordToSet);
     setIsOpen(false);
